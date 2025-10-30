@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="./input.css">
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @theme {
+        --color-body: #F4F7FF;
+        --font-poppins: "Poppins", sans-serif;
+        --color-primary: #00303C; 
+      }
+    </style>
+</head>
+
+<body class="bg-body font-poppins p-6">
+    <header class="w-11/12 mx-auto bg-white p-5 rounded-2xl navbar mb-5">
+
+        <div class="flex-1 cursor-pointer">
+            <a class="flex items-center">
+                <img src="./assets/logo.png" alt="">
+                <p class="text-4xl font-light text-primary pl-3">Dev<span class="font-bold">Board</span></p>
+            </a>
+        </div>
+        <div class="flex-none">
+            <div class="flex gap-9">
+                <p class="bg-body flex items-center gap-4 p-4 rounded-4xl text-3xl font-bold"><input type="checkbox"
+                        checked="checked" class="checkbox  checkbox-md checkbox-primary" /> <span>23</span></p>
+                <button class="bg-body p-3 rounded-full cursor-pointer">
+                    <img src="./assets/theme-btn.png" alt="">
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="w-11/12 mx-auto flex justify-between gap-6">
+        <div class="w-4/5 h-dvh bg-white rounded-2xl">
+
+        </div>
+        <div class="w-1/5 h-lvh bg-white rounded-2xl">
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
