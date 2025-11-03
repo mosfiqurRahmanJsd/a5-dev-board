@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <title>Dev Board</title>
     <!-- daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <link rel="stylesheet" href="./input.css">
+    <link   rel="stylesheet"  href="./css/input.css">
 
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link 
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet"
+    <link  rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=history" />
 
     <style type="text/tailwindcss">
@@ -43,7 +44,7 @@
         <div class="flex-none">
             <div class="flex gap-9">
                 <p class="bg-body flex items-center gap-4 p-4 rounded-4xl text-3xl font-bold"><input type="checkbox"
-                        checked="checked" class="checkbox  checkbox-md text-white bg-secondary" /> <span>23</span></p>
+                        checked="checked" class="checkbox  checkbox-md text-white bg-secondary" /> <span id="added-task">23</span></p>
                 <button class="bg-body p-3 rounded-full cursor-pointer">
                     <img src="./assets/theme-btn.png" alt="">
                 </button>
@@ -62,7 +63,7 @@
                     </div>
                     <div class="">
                         <p class="font-medium">Task Assigned</p>
-                        <h2 class="text-4xl font-bold">05</h2>
+                        <h2 class="text-4xl font-bold" id="task-assigned">6</h2>
                     </div>
                 </div>
 
@@ -75,7 +76,7 @@
                         <img src="./assets/calender.png" alt="">
                     </div>
                     <div>
-                        <input type="date" class="input" />
+                        <input type="date" name="" id="">
                     </div>
                 </div>
             </div>
@@ -91,7 +92,7 @@
                             <p class="text-[#496B76]">Deadline</p>
                             <h4 class="text-[#00303C] text-xl font-medium">21 March 2025</h4>
                         </div>
-                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium">Completed</button>
+                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium complete-btn">Completed</button>
                     </div>
                 </div>
 
@@ -100,32 +101,30 @@
                     <p class="bg-white px-4 py-2 rounded-xl w-fit mb-4">CloudSync</p>
                     <h3 class="text-2xl font-medium mb-4">Add Dark Mode</h3>
                     <p class="bg-white p-4 font-normal text-[#7F7F7F] leading-6 mb-3.5 rounded-xl ">Store the user's
-                        preference in localStorage, update CSS variables dynamically, and apply a smooth transition
-                        effect.</p>
+                        preference in localStorage, update CSS varia</p>
 
                     <div class="border-t border-dashed border-[#CED6FF] p-3.5 flex items-center justify-between">
                         <div>
                             <p class="text-[#496B76]">Deadline</p>
                             <h4 class="text-[#00303C] text-xl font-medium">21 March 2025</h4>
                         </div>
-                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium">Completed</button>
+                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium complete-btn">Completed</button>
                     </div>
                 </div>
 
 
                 <div class="bg-[#F4F7FF] p-6 rounded-2xl">
                     <p class="bg-white px-4 py-2 rounded-xl w-fit mb-4">SwiftPay</p>
-                    <h3 class="text-2xl font-medium mb-4">Optimize Home page </h3>
+                    <h3 class="text-2xl font-medium mb-4">Optimize Home page</h3>
                     <p class="bg-white p-4 font-normal text-[#7F7F7F] leading-6 mb-3.5 rounded-xl ">Debug using Chrome
-                        DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                        DevTools, check for overlapping </p>
 
                     <div class="border-t border-dashed border-[#CED6FF] p-3.5 flex items-center justify-between">
                         <div>
                             <p class="text-[#496B76]">Deadline</p>
                             <h4 class="text-[#00303C] text-xl font-medium">21 March 2025</h4>
                         </div>
-                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium">Completed</button>
+                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium complete-btn">Completed</button>
                     </div>
                 </div>
 
@@ -134,15 +133,14 @@
                     <p class="bg-white px-4 py-2 rounded-xl w-fit mb-4">Meta</p>
                     <h3 class="text-2xl font-medium mb-4">Add new emoji 🤲</h3>
                     <p class="bg-white p-4 font-normal text-[#7F7F7F] leading-6 mb-3.5 rounded-xl ">Debug using Chrome
-                        DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                        DevTools, check for overlapping </p>
 
                     <div class="border-t border-dashed border-[#CED6FF] p-3.5 flex items-center justify-between">
                         <div>
                             <p class="text-[#496B76]">Deadline</p>
                             <h4 class="text-[#00303C] text-xl font-medium">21 March 2025</h4>
                         </div>
-                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium">Completed</button>
+                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium complete-btn">Completed</button>
                     </div>
                 </div>
 
@@ -150,36 +148,31 @@
                     <p class="bg-white px-4 py-2 rounded-xl w-fit mb-4">Google LLC</p>
                     <h3 class="text-2xl font-medium mb-4">Integrate OpenAI API </h3>
                     <p class="bg-white p-4 font-normal text-[#7F7F7F] leading-6 mb-3.5 rounded-xl ">Debug using Chrome
-                        DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                        DevTools, check for overlapping </p>
 
                     <div class="border-t border-dashed border-[#CED6FF] p-3.5 flex items-center justify-between">
                         <div>
                             <p class="text-[#496B76]">Deadline</p>
                             <h4 class="text-[#00303C] text-xl font-medium">21 March 2025</h4>
                         </div>
-                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium">Completed</button>
+                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium complete-btn">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-[#F4F7FF] p-6 rounded-2xl">
-                    <p class="bg-white px-4 py-2 rounded-xl w-fit mb-4">Glassdoar</p>
+                    <p class="bg-white px-4 py-2 rounded-xl w-fit mb-4">Glasser </p>
                     <h3 class="text-2xl font-medium mb-4">Improve Job searching </h3>
                     <p class="bg-white p-4 font-normal text-[#7F7F7F] leading-6 mb-3.5 rounded-xl ">Debug using Chrome
-                        DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                        DevTools, check for overlapping </p>
 
                     <div class="border-t border-dashed border-[#CED6FF] p-3.5 flex items-center justify-between">
                         <div>
                             <p class="text-[#496B76]">Deadline</p>
                             <h4 class="text-[#00303C] text-xl font-medium">21 March 2025</h4>
                         </div>
-                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium">Completed</button>
+                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium complete-btn">Completed</button>
                     </div>
                 </div>
-
-
-
 
             </div>
         </div>
@@ -191,12 +184,12 @@
                         history
                     </span> Activity Log</p>
 
-                <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium">Clear History</button>
+                <button id="clear-history-btn" class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium ">Clear History</button>
             </div>
 
 
-            <div class="py-6 ps-8 pr-4">
-                <p class="bg-body p-2.5 rounnded-xl">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            <div class="py-6 ps-8 pr-4" id="task-history">
+                
             </div>
 
         </div>
