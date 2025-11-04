@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>Dev Board</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link   rel="stylesheet"  href="./css/input.css">
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link  rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=history" />
+
+    <style type="text/tailwindcss">
+        @theme {
+        --color-body: #F4F7FF;
+        --font-poppins: "Poppins", sans-serif;
+        --color-primary: #00303C; 
+        --color-secondary: #3058FD;
+        --color-disabled: #CED6FF;
+        
+      }
+    </style>
+</head>
+
+<body class="bg-body font-poppins p-6">
+    <header class="container mx-auto bg-white p-5 rounded-2xl navbar mb-5">
+
+        <div class="flex-1 cursor-pointer">
+            <a class="flex items-center">
+                <img src="./assets/logo.png" alt="">
+                <p class="text-4xl font-light text-primary pl-3">Dev<span class="font-bold">Board</span></p>
+            </a>
+        </div>
+        <div class="flex-none">
+            <div class="flex gap-9">
+                <a  href="index.html" class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium ">Back to Desk</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container mx-auto ">
+        <div class="bg-white w-full p-6 rounded-2xl mb-6">
+            <h2 class="text-3xl font-semibold  border-b border-gray-300 border-dashed pb-3.5">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <p class="py-3">Answer: 1. document.getElementById(), 2. document.getElementsByClassName(), 3. document.querySelector(), 4. document.querySelectorAll(), 5. document.getElementByTagName()  </p>
+        </div>
+        <div class="bg-white w-full p-6 rounded-2xl mb-6">
+            <h2 class="text-3xl font-semibold  border-b border-gray-300 border-dashed pb-3.5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+            <p class="py-3">Answer: innerHTML is html element, innerText is html element content The textContent property also ignores all HTML tags and returns only the text. </p>
+        </div>
+        <div class="bg-white w-full p-6 rounded-2xl mb-6">
+            <h2 class="text-3xl font-semibold  border-b border-gray-300 border-dashed pb-3.5">Question-3: What is event delegation in the DOM?</h2>
+            <p class="py-3">Answer: By default, events triggered on an element propagate up the DOM tree to the element's parent, its ancestors, and on up until the root element (html).</p>
+        </div>
+        <div class="bg-white w-full p-6 rounded-2xl mb-6">
+            <h2 class="text-3xl font-semibold  border-b border-gray-300 border-dashed pb-3.5">Question-4: What is event bubbling in the DOM?</h2>
+            <p class="py-3">Answer: HTML elements receive different types of events, from click, to blur, to scroll, and so on.</p>
+        </div>
+        <div class="bg-white w-full p-6 rounded-2xl mb-6">
+            <h2 class="text-3xl font-semibold  border-b border-gray-300 border-dashed pb-3.5">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+            <p class="py-3">Answer: document.createElement(), document.getElementById(), Creating, adding, and removing elements in the HTML Document Object Model (DOM) using JavaScript involves specific methods..</p>
+        </div>
+        
+    </main>
+
+
+
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>

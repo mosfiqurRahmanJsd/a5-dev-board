@@ -51,7 +51,10 @@ for(const completeBtn of completeBtns) {
 
 
         // disabled Btn
-        event.target.classList.add
+        event.target.setAttribute('disabled', 'disabled'); 
+        event.target.classList.remove('bg-secondary'); 
+        event.target.classList.add('bg-disabled'); 
+
         
     })
 }

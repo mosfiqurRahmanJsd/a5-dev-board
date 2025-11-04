@@ -28,6 +28,8 @@
         --font-poppins: "Poppins", sans-serif;
         --color-primary: #00303C; 
         --color-secondary: #3058FD;
+        --color-disabled: #CED6FF;
+        
       }
     </style>
 </head>
@@ -67,10 +69,10 @@
                     </div>
                 </div>
 
-                <div class="w-2/4 bg-linear-to-r from-[#3B56FD] to-[#95A2F9] rounded-xl flex items-center gap-6 px-10">
+                <a href="blog.html" class="w-2/4 bg-linear-to-r from-[#3B56FD] to-[#95A2F9] rounded-xl flex items-center gap-6 px-10">
                     <img src="./assets/board.png" alt="">
                     <h2 class="text-2xl text-white font-medium">Discover Something New Today!</h2>
-                </div>
+                </a>
                 <div class="bg-[#F4F7FF] p-8 flex justify-between items-center w-1/4 rounded-2xl">
                     <div class="bg-white w-fit p-4 rounded-full">
                         <img src="./assets/calender.png" alt="">
@@ -140,7 +142,7 @@
                             <p class="text-[#496B76]">Deadline</p>
                             <h4 class="text-[#00303C] text-xl font-medium">21 March 2025</h4>
                         </div>
-                        <button class="btn my-3.5 bg-secondary text-white px-4 py-3 font-medium complete-btn">Completed</button>
+                        <button class="btn my-3.5 btn-disabled bg-secondary text-white px-4 py-3 font-medium complete-btn" >Completed</button>
                     </div>
                 </div>
 
